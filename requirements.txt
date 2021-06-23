@@ -17,4 +17,4 @@ httplib2
 pySmartDL
 psutil
 pytube
-googleapiclient.discovery
+google-api-python-client
