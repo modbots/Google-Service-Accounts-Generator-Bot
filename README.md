@@ -1,6 +1,6 @@
 # Google Srvice Accounts Generator Telegram Bot
 **A Telegram bot to generate google service accounts.**
-- Find it on Telegram as [Google Drive Uploader](https://t.me/GoogleSA_Bot)
+- Find it on Telegram as [Google Service Accounts](https://t.me/GoogleSA_Bot)
 
 ## Features
 - [X] Create New Projects.
