@@ -33,7 +33,7 @@ def _del(client, message):
         
         else:
             #cloud = build('cloudresourcemanager', 'v1', credentials=creds)
-            iam = build('iam', 'v1', credentials=creds)
+            iam = build('iam', 'v1', credentials=creds, cache_discovery=False)
             for i in projects:
                 deleteing = _delete_sas(iam,i)
 
@@ -53,7 +53,7 @@ def _sas(client, message):
         
         else:
             #cloud = build('cloudresourcemanager', 'v1', credentials=creds)
-            iam = build('iam', 'v1', credentials=creds)
+            iam = build('iam', 'v1', credentials=creds, cache_discovery=False)
             prefix = "mfc-"
             sentmessage.edit('Building Sas')
             SAS = _create_remaining_accounts(iam,project)
@@ -83,7 +83,7 @@ def _generate_keys(project_id, prefix, creds, sentmessage, patha):
     total_sas = list_service_accounts(project_id, creds)['accounts']
     prefix_sas=[]
     service = googleapiclient.discovery.build(
-        'iam', 'v1', credentials=creds)
+        'iam', 'v1', credentials=creds, cache_discovery=False)
     print("Length of sas =", len(total_sas))
     for account in total_sas:
         # print("%s, prefix=%s" %(account['displayName'],account['displayName'][0:3]))
@@ -121,7 +121,7 @@ def list_service_accounts(project_id, creds):
 
     credentials = creds
     service = googleapiclient.discovery.build(
-        'iam', 'v1', credentials=credentials)
+        'iam', 'v1', credentials=credentials, cache_discovery=False)
 
     service_accounts = service.projects().serviceAccounts().list(
         name='projects/' + project_id, pageSize=100).execute()
