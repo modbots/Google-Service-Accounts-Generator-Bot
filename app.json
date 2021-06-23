@@ -1,9 +1,9 @@
 {
-  "name": "GDrive-Uploader-Bot",
-  "description": "Telegram/Direct Links to GDrive Uploader Bot",
-  "repository": "https://github.com/viperadnan-git/google-drive-telegram-bot",
-  "logo": "https://telegra.ph/file/8669281aa2360613f7511.jpg",
-  "keywords": ["Telegram", "Google Drive", "uploader"],
+  "name": "Google Srvice Accounts Generator Telegram Bot",
+  "description": "Google Srvice Accounts Generator Telegram Bot",
+  "repository": "https://github.com/modbots/Google-Service-Accounts-Generator-Bot",
+  "logo": "https://github.com/modbots/drive2drive/raw/main/credentials/moedyiu.jpg",
+  "keywords": ["Telegram", "Google Drive", "Service Accounts"],
   "env": {
     "ENV": {
       "description": "Set it to anything to enable configuration by environment variables.",
@@ -36,9 +36,6 @@
    "buildpacks": [
     {
       "url": "heroku/python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
     }
   ]
 }
