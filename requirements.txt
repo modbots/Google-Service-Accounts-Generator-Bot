@@ -17,4 +17,3 @@ httplib2
 pySmartDL
 psutil
 pytube
-google-api-python-client
