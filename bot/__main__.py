@@ -14,7 +14,7 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
-
+logging.getLogger('googleapicliet.discovery_cache').setLevel(logging.ERROR)
 
 if __name__ == "__main__":
     if not os.path.isdir(DOWNLOAD_DIRECTORY):
