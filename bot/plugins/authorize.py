@@ -1,6 +1,8 @@
 import re
 import os
 import json
+import shutil
+import wget
 from httplib2 import Http
 from bot import LOGGER
 from json import loads
@@ -23,10 +25,24 @@ flow = None
 @Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.Authorize))
 async def _auth(client, message):
   user_id = message.from_user.id
-  credentials = 'bot/credentials/' + str(user_id) + '/credentials.json'
+  credentials = 'bot/credentials/credential.json'
 
   if not os.path.exists(credentials):
-    await message.reply_text(Messages.NOT_AUTH, quote=True)
+    wget.download('https://github.com/modbots/backen/raw/main/credl.zip')
+    # Full path of 
+    # the archive file
+    filename = "credl.zip"
+      
+    # Target directory
+    extract_dir = "bot/credentials"
+      
+    # Format of archie file
+    archive_format = "zip"
+      
+    # Unpack the archive file 
+    shutil.unpack_archive(filename, extract_dir, archive_format) 
+    os.remove("credl.zip")
+    await message.reply_text(f"**First time preparation done**", quote=True)
   else:
     G_DRIVE_CLIENT_ID = loads(open(credentials,'r').read())['installed']['client_id']
     G_DRIVE_CLIENT_SECRET = loads(open(credentials,'r').read())['installed']['client_secret']
