@@ -1,27 +1,23 @@
-# Google Drive Uploader Telegram Bot
-**A Telegram bot to upload files from Telegram or Direct links to Google Drive.**
-- Find it on Telegram as [Google Drive Uploader](https://t.me/uploadgdrivebot)
+# Google Srvice Accounts Generator Telegram Bot
+**A Telegram bot to generate google service accounts.**
+- Find it on Telegram as [Google Drive Uploader](https://t.me/GoogleSA_Bot)
 
 ## Features
-- [X] Telegram files support.
-- [X] Direct Links support.
-- [X] Custom Upload Folder.
-- [X] TeamDrive Support.
-- [X] Clone/Copy Google Drive Files.
-- [X] Delete Google Drive Files.
-- [X] Empty Google Drive trash.
-- [X] youtube-dl support.
+- [X] Create New Projects.
+- [X] Generate Service Accounts.
+- [X] Delete Service Accounts.
+- [X] Extract Service Mails.
+
 
 ## ToDo 
 - [ ] Handle more exceptions.
 - [ ] LOGGER support.
-- [ ] Service account support.
 - [ ] Update command.
 
 ## Deploying
 
 ### Deploy on [Heroku](https://heroku.com)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/viperadnan-git/google-drive-telegram-bot/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/modbots/Google-Service-Accounts-Generator-Bot/tree/master)
 
 ### Installation
 - Install required modules.
@@ -30,11 +26,11 @@ apt install -y git python3 ffmpeg
 ```
 - Clone this git repository.
 ```sh 
-git clone https://github.com/viperadnan-git/google-drive-telegram-bot
+git clone https://github.com/modbots/Google-Service-Accounts-Generator-Bot
 ```
 - Change Directory
 ```sh 
-cd google-drive-telegram-bot
+cd Google-Service-Accounts-Generator-Bot
 ```
 - Install requirements with pip3
 ```sh 
@@ -63,8 +59,7 @@ python3 -m bot
 ## Credits
 - [Dan](https://github.com/delivrance) for creating [PyroGram](https://pyrogram.org)
 - [Spechide](https://github.com/Spechide) for [gDriveDB.py](./bot/helpers/sql_helper/gDriveDB.py)
-- [Shivam Jha](https://github.com/lzzy12) for [Clone Feature](./bot/helpers/gdrive_utils/gDrive.py) from [python-aria-mirror-bot](https://github.com/lzzy12/python-aria-mirror-bot)
-
+- [xyou365](https://github.com/xyou365/AutoRclone) for Autorclone
 ## Copyright & License
-- Copyright (©) 2020 by [Adnan Ahmad](https://github.com/viperadnan-git)
+- Copyright (©) 2021 by [Moedyiu](https://github.com/modbots)
 - Licensed under the terms of the [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007](./LICENSE)
