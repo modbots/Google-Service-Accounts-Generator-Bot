@@ -20,10 +20,7 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/modbots/Google-Service-Accounts-Generator-Bot/tree/master)
 
 ### Installation
-- Install required modules.
-```sh
-apt install -y git python3 ffmpeg
-```
+
 - Clone this git repository.
 ```sh 
 git clone https://github.com/modbots/Google-Service-Accounts-Generator-Bot
